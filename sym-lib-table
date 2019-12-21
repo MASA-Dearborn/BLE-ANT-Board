@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BLEANT-rescue)(type Legacy)(uri ${KIPRJMOD}/BLEANT-rescue.lib)(options "")(descr ""))
+)
