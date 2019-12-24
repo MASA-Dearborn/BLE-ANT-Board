@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:BLEANT-cache
-LIBS:CAN_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1348,10 +1347,84 @@ F 3 "" H 7300 2100 50  0001 C CNN
 	1    7300 2100
 	-1   0    0    1   
 $EndComp
-Text GLabel 4900 3000 2    50   Input ~ 0
+Text GLabel 4900 3400 2    50   Input ~ 0
 Temperature
 Text GLabel 4900 3100 2    50   Input ~ 0
 5V0Sense
 Text GLabel 4900 3200 2    50   Input ~ 0
 3V3Sense
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5E3A3564
+P 4900 3500
+F 0 "#PWR0112" H 4900 3350 50  0001 C CNN
+F 1 "+3.3V" H 4915 3673 50  0000 C CNN
+F 2 "" H 4900 3500 50  0001 C CNN
+F 3 "" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5E3A5E8B
+P 4900 3000
+F 0 "#PWR0113" H 4900 2850 50  0001 C CNN
+F 1 "+5V" H 4915 3173 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	0    1    1    0   
+$EndComp
+Text GLabel 13700 4950 0    50   Input ~ 0
+MOSI
+Text GLabel 13700 5100 0    50   Output ~ 0
+MISO
+Text GLabel 13700 5250 0    50   Input ~ 0
+CS
+Text GLabel 13700 5400 0    50   Input ~ 0
+SCK
+Text GLabel 13700 6450 0    50   Input ~ 0
+CAN_RST
+Text GLabel 13700 5550 0    50   Output ~ 0
+CAN_INT
+Text GLabel 13700 5700 0    50   Output ~ 0
+RX0BF
+Text GLabel 13700 5850 0    50   Output ~ 0
+RX1BF
+Text GLabel 13700 6000 0    50   Input ~ 0
+TX0RTS
+Text GLabel 13700 6150 0    50   Input ~ 0
+TX1RTS
+Text GLabel 13700 6300 0    50   Input ~ 0
+TX2RTS
+Text GLabel 13300 3250 0    50   Input ~ 0
+UART_TX
+Text GLabel 13300 3350 0    50   Output ~ 0
+UART_RX
+Text GLabel 4900 5800 2    50   Input ~ 0
+UART_RX
+Text GLabel 4900 5900 2    50   Output ~ 0
+UART_TX
+Text GLabel 4900 3700 2    50   Output ~ 0
+TX0RTS
+Text GLabel 4900 3800 2    50   Output ~ 0
+TX1RTS
+Text GLabel 4900 3900 2    50   Output ~ 0
+TX2RTS
+Text GLabel 4900 4000 2    50   Output ~ 0
+CAN_RST
+Text GLabel 4900 4100 2    50   Output ~ 0
+CS
+Text GLabel 4900 4200 2    50   Output ~ 0
+MISO
+Text GLabel 4900 4300 2    50   Output ~ 0
+MOSI
+Text GLabel 4900 4500 2    50   Output ~ 0
+SCK
+Text GLabel 4900 4600 2    50   Input ~ 0
+CAN_INT
+Text GLabel 4900 4700 2    50   Input ~ 0
+RX0BF
+Text GLabel 4900 4800 2    50   Input ~ 0
+RX1BF
 $EndSCHEMATC
