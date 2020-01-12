@@ -1,0 +1,66 @@
+Title,
+Revision,
+Date,
+Generated,12/30/2019 1:24:50 PM
+Company,
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,74
+Total Unique Parts,45
+
+
+
+Ref,Qty,Value,Footprint,Datasheet,Description,Field4,Field5,Height,Manufacturer_Name,Manufacturer_Part_Number,Mouser Part Number,Mouser Price/Stock,RS Part Number,RS Price/Stock,
+C1 C2 ,2,12pF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C3 ,1,2.2nF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C4 ,1,1pF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C5 ,1,2.2pF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C6 ,1,1.5pF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C7 ,1,4.7uF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C8 C11 ,2,100nF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C9 C30 ,2,1nF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C10 ,1,47nF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C12 C22 ,2,1uF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C13 C14 ,2,20pF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C15 C18 ,2,10nF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C16 C19 ,2,22uF,Capacitor_SMD:C_0805_2012Metric,~, , , , , , , , , , 
+C17 C26 ,2,100nf,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C20 C25 C29 ,3,1nf,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C21 ,1,0.68uF,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+C23 C24 C27 C28 ,4,100pf,Capacitor_SMD:C_0402_1005Metric,~, , , , , , , , , , 
+D1 ,1,D5V0L2B3W-7,Package_TO_SOT_SMD:SOT-23,https://www.mouser.com/datasheet/2/115/D5V0L2B3W-218988.pdf, , , , , , , , , , 
+D2 D3 ,2,D_TVS,Diode_SMD:D_SOD-523,~, , , , , , , , , , 
+IC1 IC2 ,2,FAN4010IL6X_F113,FAN4010:6-LEAD_MICROPAK,http://pdl.designspark.com/api/v1/manufacturers/53f31bb99b4759f8698ebd6d/part/54f601839b4759c27e8ce92c/54f601849b4759c27e8ce954/1pdf,Current Sense Amplifier Single Single Ended 6-Pin MLP, , , ,ON Semiconductor,FAN4010IL6X_F113,512-FAN4010IL6X_F113,http://www.mouser.com/Search/ProductDetail.aspx?qs=bXpVsf6NmSLCEHlKPwERMg%3d%3d,8650874P,http://uk.rs-online.com/web/p/products/8650874P
+J1 ,1,Conn_01x04_Male,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~, , , , , , , , , , 
+J2 ,1,SC_19-20,MASA_Library:Stack_Connector_2019_2020,,Conn Shrouded Header HDR 40 POS 1.27mm Solder ST SMD T/R, , ,11.35,SAMTEC,TFC-120-32-F-D-A-K-TR, , , , 
+J3 J4 ,2,Conn_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,~, , , , , , , , , , 
+J5 ,1,1909763-1,U:TE_1909763-1,https://www.te.com/usa-en/product-1909763-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493, ,1,1909763-1, , , , , , , 
+L1 ,1,4.7nH,Inductor_SMD:L_0402_1005Metric,~, , , , , , , , , , 
+L2 ,1,10nH,Inductor_SMD:L_0402_1005Metric,~, , , , , , , , , , 
+L3 ,1,3.3nH,Inductor_SMD:L_0402_1005Metric,~, , , , , , , , , , 
+L4 ,1,10uH,Inductor_SMD:L_0603_1608Metric,~, , , , , , , , , , 
+L5 ,1,15nH,Inductor_SMD:L_0402_1005Metric,~, , , , , , , , , , 
+L7 L9 ,2,4.7uH,Inductor_SMD:L_0805_2012Metric,~, , , , , , , , , , 
+NP1 NP2 ,2,60,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R1 R3 R6 R7 ,4,1,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R2 R12 R14 R16 ,4,10k,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R4 R5 ,2,820k,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R8 R9 ,2,3k,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R10 R11 R13 ,3,0,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+R15 ,1,6k,Resistor_SMD:R_0402_1005Metric,~, , , , , , , , , , 
+U1 ,1,nRF51x22-QFxx,Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm,http://infocenter.nordicsemi.com/pdf/nRF51822_PS_v3.3.pdf, , , , , , , , , , 
+U2 ,1,LM50BIM3,footprints:LM50_DBZ_3,, , , , , , , , , , 
+U3 U4 ,2,MP5077GG-Z,MASA_Library:MP5077GG-Z,, , , , , , , , , , 
+U5 ,1,MCP2515-xSO,Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm,http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf, , , , , , , , , , 
+U6 ,1,SN65HVD1050D,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://www.ti.com/lit/ds/symlink/sn65hvd1050.pdf, , , , , , , , , , 
+U7 ,1,TXB0104PWR,Level Shifter:TXB0104PWR,, , , , , , , , , , 
+X2 ,1,32.768kHz,Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm,~, , , , , , , , , , 
+Y1 ,1,16MHz,Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm,~, , , , , , , , , , 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated 12/30/2019 1:24:50 PM
