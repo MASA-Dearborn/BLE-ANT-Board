@@ -60,7 +60,6 @@ F 3 "http://infocenter.nordicsemi.com/pdf/nRF51822_PS_v3.3.pdf" H 3600 4300 50  
 $EndComp
 Wire Wire Line
 	3900 1000 4000 1000
-Connection ~ 4000 1000
 $Comp
 L Device:L L4
 U 1 1 5DF61714
@@ -614,7 +613,7 @@ L Device:C C21
 U 1 1 5E00C19D
 P 7450 3200
 F 0 "C21" V 7198 3200 50  0000 C CNN
-F 1 "0.68uF" V 7289 3200 50  0000 C CNN
+F 1 "47nF" V 7289 3200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7488 3050 50  0001 C CNN
 F 3 "~" H 7450 3200 50  0001 C CNN
 	1    7450 3200
@@ -684,7 +683,7 @@ L Device:C C22
 U 1 1 5E01240A
 P 7450 5050
 F 0 "C22" H 7335 5004 50  0000 R CNN
-F 1 "1uF" H 7335 5095 50  0000 R CNN
+F 1 "47nF" H 7335 5095 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7488 4900 50  0001 C CNN
 F 3 "~" H 7450 5050 50  0001 C CNN
 	1    7450 5050
@@ -709,23 +708,23 @@ Text GLabel 6650 4300 0    50   BiDi ~ 0
 $Comp
 L Device:R_US R8
 U 1 1 5E056826
-P 9000 1500
-F 0 "R8" V 9205 1500 50  0000 C CNN
-F 1 "3k" V 9114 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9040 1490 50  0001 C CNN
-F 3 "~" H 9000 1500 50  0001 C CNN
-	1    9000 1500
+P 9000 1600
+F 0 "R8" V 9205 1600 50  0000 C CNN
+F 1 "3k" V 9114 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9040 1590 50  0001 C CNN
+F 3 "~" H 9000 1600 50  0001 C CNN
+	1    9000 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 5E0584EB
-P 9000 1650
-F 0 "#PWR0128" H 9000 1400 50  0001 C CNN
-F 1 "GND" H 9005 1477 50  0000 C CNN
-F 2 "" H 9000 1650 50  0001 C CNN
-F 3 "" H 9000 1650 50  0001 C CNN
-	1    9000 1650
+P 9000 1750
+F 0 "#PWR0128" H 9000 1500 50  0001 C CNN
+F 1 "GND" H 9005 1577 50  0000 C CNN
+F 2 "" H 9000 1750 50  0001 C CNN
+F 3 "" H 9000 1750 50  0001 C CNN
+	1    9000 1750
 	1    0    0    -1  
 $EndComp
 Text GLabel 9000 1350 0    50   Output ~ 0
@@ -815,23 +814,23 @@ $EndComp
 $Comp
 L Device:R_US R9
 U 1 1 5E07C9A1
-P 9100 3600
-F 0 "R9" V 9305 3600 50  0000 C CNN
-F 1 "3k" V 9214 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9140 3590 50  0001 C CNN
-F 3 "~" H 9100 3600 50  0001 C CNN
-	1    9100 3600
+P 9100 3750
+F 0 "R9" V 9305 3750 50  0000 C CNN
+F 1 "3k" V 9214 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9140 3740 50  0001 C CNN
+F 3 "~" H 9100 3750 50  0001 C CNN
+	1    9100 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0131
 U 1 1 5E07C9AB
-P 9100 3750
-F 0 "#PWR0131" H 9100 3500 50  0001 C CNN
-F 1 "GND" H 9105 3577 50  0000 C CNN
-F 2 "" H 9100 3750 50  0001 C CNN
-F 3 "" H 9100 3750 50  0001 C CNN
-	1    9100 3750
+P 9100 3900
+F 0 "#PWR0131" H 9100 3650 50  0001 C CNN
+F 1 "GND" H 9105 3727 50  0000 C CNN
+F 2 "" H 9100 3900 50  0001 C CNN
+F 3 "" H 9100 3900 50  0001 C CNN
+	1    9100 3900
 	1    0    0    -1  
 $EndComp
 Text GLabel 9100 3450 0    50   Output ~ 0
@@ -1471,17 +1470,6 @@ F 3 "~" H 12850 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R17
-U 1 1 5E22D409
-P 13200 1200
-F 0 "R17" V 13405 1200 50  0000 C CNN
-F 1 "3.3k" V 13314 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13240 1190 50  0001 C CNN
-F 3 "~" H 13200 1200 50  0001 C CNN
-	1    13200 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L L6
 U 1 1 5E22DD66
 P 13500 1050
@@ -1533,22 +1521,15 @@ Wire Wire Line
 Connection ~ 14150 1050
 Wire Wire Line
 	14150 1050 13750 1050
-Wire Wire Line
-	13350 1050 13200 1050
 Connection ~ 12450 1050
 Wire Wire Line
 	12450 1050 12350 1050
 Connection ~ 12850 1050
 Wire Wire Line
 	12850 1050 12450 1050
-Connection ~ 13200 1050
-Wire Wire Line
-	13200 1050 12850 1050
 Wire Wire Line
 	12450 1350 12850 1350
 Connection ~ 12850 1350
-Wire Wire Line
-	12850 1350 13200 1350
 Wire Wire Line
 	13750 1350 13800 1350
 Wire Wire Line
@@ -1614,4 +1595,366 @@ F 3 "" H 11950 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11200 1050 11550 1050
+Text Notes 950  7250 0    591  ~ 0
+nRF51422
+Text Notes 6150 5800 0    276  ~ 0
+Power Conditioning\n
+Text Notes 10850 650  0    276  ~ 0
+Temp Sensor\n
+Text Notes 12200 4250 0    276  ~ 0
+Stack Connector\n
+Text Notes 13050 7150 0    276  ~ 0
+CAN Sheet\n
+Wire Wire Line
+	12850 1050 13200 1050
+Connection ~ 4000 1000
+$Comp
+L dk_Test-Points:5029 TP1
+U 1 1 5E2B4B21
+P 7550 4400
+F 0 "TP1" H 7600 4447 50  0000 L CNN
+F 1 "5029" H 7550 4300 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 7750 4600 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 7750 4700 60  0001 L CNN
+F 4 "36-5029CT-ND" H 7750 4800 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 7750 4900 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 7750 5000 60  0001 L CNN "Category"
+F 7 "Test Points" H 7750 5100 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 7750 5200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 7750 5300 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 7750 5400 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 7750 5500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7750 5600 60  0001 L CNN "Status"
+	1    7550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP3
+U 1 1 5E2B71E0
+P 8800 4400
+F 0 "TP3" H 8850 4447 50  0000 L CNN
+F 1 "5029" H 8800 4300 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 9000 4600 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9000 4700 60  0001 L CNN
+F 4 "36-5029CT-ND" H 9000 4800 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 9000 4900 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 9000 5000 60  0001 L CNN "Category"
+F 7 "Test Points" H 9000 5100 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9000 5200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 9000 5300 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 9000 5400 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 9000 5500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9000 5600 60  0001 L CNN "Status"
+	1    8800 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 4300
+$Comp
+L dk_Test-Points:5029 TP2
+U 1 1 5E2B7BB1
+P 7600 2550
+F 0 "TP2" H 7650 2597 50  0000 L CNN
+F 1 "5029" H 7600 2450 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 7800 2750 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 7800 2850 60  0001 L CNN
+F 4 "36-5029CT-ND" H 7800 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 7800 3050 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 7800 3150 60  0001 L CNN "Category"
+F 7 "Test Points" H 7800 3250 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 7800 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 7800 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 7800 3550 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 7800 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7800 3750 60  0001 L CNN "Status"
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP4
+U 1 1 5E2B8410
+P 8850 2550
+F 0 "TP4" H 8900 2597 50  0000 L CNN
+F 1 "5029" H 8850 2450 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 9050 2750 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9050 2850 60  0001 L CNN
+F 4 "36-5029CT-ND" H 9050 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 9050 3050 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 9050 3150 60  0001 L CNN "Category"
+F 7 "Test Points" H 9050 3250 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9050 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 9050 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 9050 3550 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 9050 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9050 3750 60  0001 L CNN "Status"
+	1    8850 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8850 2450
+$Comp
+L dk_Test-Points:5029 TP10
+U 1 1 5E2B8AF5
+P 13200 1150
+F 0 "TP10" H 13250 1197 50  0000 L CNN
+F 1 "5029" H 13200 1050 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 13400 1350 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 13400 1450 60  0001 L CNN
+F 4 "36-5029CT-ND" H 13400 1550 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 13400 1650 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 13400 1750 60  0001 L CNN "Category"
+F 7 "Test Points" H 13400 1850 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 13400 1950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 13400 2050 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 13400 2150 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 13400 2250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13400 2350 60  0001 L CNN "Status"
+	1    13200 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 13200 1050
+Wire Wire Line
+	13200 1050 13350 1050
+$Comp
+L dk_Test-Points:5029 TP11
+U 1 1 5E2B968C
+P 14150 950
+F 0 "TP11" H 14100 997 50  0000 R CNN
+F 1 "5029" H 14150 850 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 14350 1150 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 14350 1250 60  0001 L CNN
+F 4 "36-5029CT-ND" H 14350 1350 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 14350 1450 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 14350 1550 60  0001 L CNN "Category"
+F 7 "Test Points" H 14350 1650 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 14350 1750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 14350 1850 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 14350 1950 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 14350 2050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14350 2150 60  0001 L CNN "Status"
+	1    14150 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 1450 9000 1350
+$Comp
+L dk_Test-Points:5029 TP5
+U 1 1 5E2C387B
+P 8900 1450
+F 0 "TP5" V 8805 1497 50  0000 C CNN
+F 1 "5029" H 8900 1350 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 9100 1650 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9100 1750 60  0001 L CNN
+F 4 "36-5029CT-ND" H 9100 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 9100 1950 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 9100 2050 60  0001 L CNN "Category"
+F 7 "Test Points" H 9100 2150 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9100 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 9100 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 9100 2450 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 9100 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9100 2650 60  0001 L CNN "Status"
+	1    8900 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 9000 1450
+Wire Wire Line
+	9100 3600 9100 3550
+$Comp
+L dk_Test-Points:5029 TP6
+U 1 1 5E2CC309
+P 9000 3550
+F 0 "TP6" V 8905 3597 50  0000 C CNN
+F 1 "5029" H 9000 3450 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 9200 3750 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9200 3850 60  0001 L CNN
+F 4 "36-5029CT-ND" H 9200 3950 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 9200 4050 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 9200 4150 60  0001 L CNN "Category"
+F 7 "Test Points" H 9200 4250 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 9200 4350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 9200 4450 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 9200 4550 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 9200 4650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9200 4750 60  0001 L CNN "Status"
+	1    9000 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 9100 3550
+Wire Wire Line
+	9100 3550 9100 3450
+$Comp
+L power:+5V #PWR0114
+U 1 1 5E2CCA86
+P 10450 4200
+F 0 "#PWR0114" H 10450 4050 50  0001 C CNN
+F 1 "+5V" H 10465 4373 50  0000 C CNN
+F 2 "" H 10450 4200 50  0001 C CNN
+F 3 "" H 10450 4200 50  0001 C CNN
+	1    10450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5E2CCDCC
+P 10650 4200
+F 0 "#PWR0138" H 10650 3950 50  0001 C CNN
+F 1 "GND" H 10655 4027 50  0000 C CNN
+F 2 "" H 10650 4200 50  0001 C CNN
+F 3 "" H 10650 4200 50  0001 C CNN
+	1    10650 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 5E2CD14B
+P 10850 4200
+F 0 "#PWR0139" H 10850 4050 50  0001 C CNN
+F 1 "+3.3V" H 10865 4373 50  0000 C CNN
+F 2 "" H 10850 4200 50  0001 C CNN
+F 3 "" H 10850 4200 50  0001 C CNN
+	1    10850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP7
+U 1 1 5E2CD4C3
+P 10450 4300
+F 0 "TP7" H 10500 4347 50  0000 L CNN
+F 1 "5029" H 10450 4200 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10650 4500 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10650 4600 60  0001 L CNN
+F 4 "36-5029CT-ND" H 10650 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 10650 4800 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 10650 4900 60  0001 L CNN "Category"
+F 7 "Test Points" H 10650 5000 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10650 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 10650 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 10650 5300 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 10650 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10650 5500 60  0001 L CNN "Status"
+	1    10450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP8
+U 1 1 5E2CE1E3
+P 10650 4300
+F 0 "TP8" H 10700 4347 50  0000 L CNN
+F 1 "5029" H 10650 4200 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10850 4500 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10850 4600 60  0001 L CNN
+F 4 "36-5029CT-ND" H 10850 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 10850 4800 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 10850 4900 60  0001 L CNN "Category"
+F 7 "Test Points" H 10850 5000 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10850 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 10850 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 10850 5300 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 10850 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10850 5500 60  0001 L CNN "Status"
+	1    10650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP9
+U 1 1 5E2CE4A8
+P 10850 4300
+F 0 "TP9" H 10900 4347 50  0000 L CNN
+F 1 "5029" H 10850 4200 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 11050 4500 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 11050 4600 60  0001 L CNN
+F 4 "36-5029CT-ND" H 11050 4700 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 11050 4800 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 11050 4900 60  0001 L CNN "Category"
+F 7 "Test Points" H 11050 5000 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 11050 5100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 11050 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 11050 5300 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 11050 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11050 5500 60  0001 L CNN "Status"
+	1    10850 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 10650 4750 1    50   Input ~ 0
+UART_RX
+Text GLabel 10450 4750 1    50   Output ~ 0
+UART_TX
+$Comp
+L dk_Test-Points:5029 TP15
+U 1 1 5E30C43D
+P 10650 4850
+F 0 "TP15" H 10700 4897 50  0000 L CNN
+F 1 "5029" H 10650 4750 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10850 5050 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10850 5150 60  0001 L CNN
+F 4 "36-5029CT-ND" H 10850 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 10850 5350 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 10850 5450 60  0001 L CNN "Category"
+F 7 "Test Points" H 10850 5550 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10850 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 10850 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 10850 5850 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 10850 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10850 6050 60  0001 L CNN "Status"
+	1    10650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP14
+U 1 1 5E30C970
+P 10450 4850
+F 0 "TP14" H 10500 4897 50  0000 L CNN
+F 1 "5029" H 10450 4750 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10650 5050 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10650 5150 60  0001 L CNN
+F 4 "36-5029CT-ND" H 10650 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 10650 5350 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 10650 5450 60  0001 L CNN "Category"
+F 7 "Test Points" H 10650 5550 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10650 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 10650 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 10650 5850 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 10650 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10650 6050 60  0001 L CNN "Status"
+	1    10450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5E31D994
+P 10450 5250
+F 0 "TP16" H 10392 5276 50  0000 R CNN
+F 1 "TestPoint" H 10392 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 10650 5250 50  0001 C CNN
+F 3 "~" H 10650 5250 50  0001 C CNN
+	1    10450 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 10450 5250 1    50   Output ~ 0
+SCK
+Text GLabel 10650 5250 1    50   Output ~ 0
+MOSI
+Text GLabel 10850 5250 1    50   Output ~ 0
+MISO
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5E31EDB6
+P 10650 5250
+F 0 "TP17" H 10592 5276 50  0000 R CNN
+F 1 "TestPoint" H 10592 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 10850 5250 50  0001 C CNN
+F 3 "~" H 10850 5250 50  0001 C CNN
+	1    10650 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5E31EFF4
+P 10850 5250
+F 0 "TP18" H 10792 5276 50  0000 R CNN
+F 1 "TestPoint" H 10792 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 11050 5250 50  0001 C CNN
+F 3 "~" H 11050 5250 50  0001 C CNN
+	1    10850 5250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

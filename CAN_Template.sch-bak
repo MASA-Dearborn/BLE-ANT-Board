@@ -496,12 +496,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR010
 U 1 1 5E0C8133
-P 1450 5000
-F 0 "#PWR010" H 1450 4850 50  0001 C CNN
-F 1 "+3V3" H 1465 5173 50  0000 C CNN
-F 2 "" H 1450 5000 50  0001 C CNN
-F 3 "" H 1450 5000 50  0001 C CNN
-	1    1450 5000
+P 1450 5300
+F 0 "#PWR010" H 1450 5150 50  0001 C CNN
+F 1 "+3V3" H 1465 5473 50  0000 C CNN
+F 2 "" H 1450 5300 50  0001 C CNN
+F 3 "" H 1450 5300 50  0001 C CNN
+	1    1450 5300
 	-1   0    0    1   
 $EndComp
 Connection ~ 1450 5000
@@ -622,4 +622,61 @@ $EndComp
 Connection ~ 5650 4100
 Wire Wire Line
 	5650 4100 5800 4100
+Text Notes 2900 4400 0    276  ~ 0
+Level Shifter
+Text Notes 5700 2200 0    276  ~ 0
+CAN Transceiver\n
+Text Notes 250  2650 0    276  ~ 0
+CAN Controller
+$Comp
+L Device:R_US R17
+U 1 1 5E27A6F5
+P 1450 5150
+F 0 "R17" H 1518 5196 50  0000 L CNN
+F 1 "0" H 1518 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1490 5140 50  0001 C CNN
+F 3 "~" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP12
+U 1 1 5E2BCF1F
+P 8700 2900
+F 0 "TP12" H 8650 2947 50  0000 R CNN
+F 1 "5029" H 8700 2800 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 8900 3100 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 8900 3200 60  0001 L CNN
+F 4 "36-5029CT-ND" H 8900 3300 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 8900 3400 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 8900 3500 60  0001 L CNN "Category"
+F 7 "Test Points" H 8900 3600 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 8900 3700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 8900 3800 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 8900 3900 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 8900 4000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8900 4100 60  0001 L CNN "Status"
+	1    8700 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Test-Points:5029 TP13
+U 1 1 5E2BE1B4
+P 8700 4000
+F 0 "TP13" H 8750 4047 50  0000 L CNN
+F 1 "5029" H 8700 3900 50  0001 C CNN
+F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 8900 4200 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 8900 4300 60  0001 L CNN
+F 4 "36-5029CT-ND" H 8900 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "5029" H 8900 4500 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 8900 4600 60  0001 L CNN "Category"
+F 7 "Test Points" H 8900 4700 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 8900 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" H 8900 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MINIATURE" H 8900 5000 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 8900 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8900 5200 60  0001 L CNN "Status"
+	1    8700 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

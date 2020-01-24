@@ -115,6 +115,23 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -505,6 +522,28 @@ X P0.2 6 900 1300 100 L 50 50 1 1 B
 X P0.3 7 900 1200 100 L 50 50 1 1 B
 X P0.4 8 900 1100 100 L 50 50 1 1 B
 X P0.5 9 900 1000 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dk_Test-Points_5029
+#
+DEF dk_Test-Points_5029 TP 0 40 N N 1 F N
+F0 "TP" -50 50 50 H V R CNN
+F1 "dk_Test-Points_5029" 0 -100 50 H I C CNN
+F2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" 200 200 60 H I L CNN
+F3 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 300 60 H I L CNN
+F4 "36-5029CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "5029" 200 500 60 H I L CNN "MPN"
+F6 "Test and Measurement" 200 600 60 H I L CNN "Category"
+F7 "Test Points" 200 700 60 H I L CNN "Family"
+F8 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "PC TEST POINT MINIATURE" 200 1000 60 H I L CNN "Description"
+F11 "Keystone Electronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 22 0 1 0 N
+X ~ 1 0 100 75 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
