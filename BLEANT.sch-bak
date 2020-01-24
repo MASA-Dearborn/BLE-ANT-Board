@@ -1879,10 +1879,10 @@ UART_RX
 Text GLabel 10450 4750 1    50   Output ~ 0
 UART_TX
 $Comp
-L dk_Test-Points:5029 TP?
+L dk_Test-Points:5029 TP15
 U 1 1 5E30C43D
 P 10650 4850
-F 0 "TP?" H 10700 4897 50  0000 L CNN
+F 0 "TP15" H 10700 4897 50  0000 L CNN
 F 1 "5029" H 10650 4750 50  0001 C CNN
 F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10850 5050 60  0001 L CNN
 F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10850 5150 60  0001 L CNN
@@ -1899,10 +1899,10 @@ F 12 "Active" H 10850 6050 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Test-Points:5029 TP?
+L dk_Test-Points:5029 TP14
 U 1 1 5E30C970
 P 10450 4850
-F 0 "TP?" H 10500 4897 50  0000 L CNN
+F 0 "TP14" H 10500 4897 50  0000 L CNN
 F 1 "5029" H 10450 4750 50  0001 C CNN
 F 2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" H 10650 5050 60  0001 L CNN
 F 3 "http://www.keyelco.com/product-pdf.cfm?p=1358" H 10650 5150 60  0001 L CNN
@@ -1917,5 +1917,44 @@ F 11 "Keystone Electronics" H 10650 5950 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 10650 6050 60  0001 L CNN "Status"
 	1    10450 4850
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5E31D994
+P 10450 5250
+F 0 "TP16" H 10392 5276 50  0000 R CNN
+F 1 "TestPoint" H 10392 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 10650 5250 50  0001 C CNN
+F 3 "~" H 10650 5250 50  0001 C CNN
+	1    10450 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 10450 5250 1    50   Output ~ 0
+SCK
+Text GLabel 10650 5250 1    50   Output ~ 0
+MOSI
+Text GLabel 10850 5250 1    50   Output ~ 0
+MISO
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5E31EDB6
+P 10650 5250
+F 0 "TP17" H 10592 5276 50  0000 R CNN
+F 1 "TestPoint" H 10592 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 10850 5250 50  0001 C CNN
+F 3 "~" H 10850 5250 50  0001 C CNN
+	1    10650 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5E31EFF4
+P 10850 5250
+F 0 "TP18" H 10792 5276 50  0000 R CNN
+F 1 "TestPoint" H 10792 5367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 11050 5250 50  0001 C CNN
+F 3 "~" H 11050 5250 50  0001 C CNN
+	1    10850 5250
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

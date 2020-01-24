@@ -472,28 +472,6 @@ Wire Wire Line
 Wire Wire Line
 	6250 3350 6300 3350
 $Comp
-L 2019-12-30_17-25-07:TXB0104PWR U7
-U 1 1 5E0A56E2
-P 3050 3150
-F 0 "U7" H 4250 3537 60  0000 C CNN
-F 1 "TXB0104PWR" H 4250 3431 60  0000 C CNN
-F 2 "Level Shifter:TXB0104PWR" H 4250 3390 60  0001 C CNN
-F 3 "" H 3050 3150 60  0000 C CNN
-	1    3050 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR024
-U 1 1 5E0C7B81
-P 3050 3150
-F 0 "#PWR024" H 3050 3000 50  0001 C CNN
-F 1 "+3V3" V 3065 3278 50  0000 L CNN
-F 2 "" H 3050 3150 50  0001 C CNN
-F 3 "" H 3050 3150 50  0001 C CNN
-	1    3050 3150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+3V3 #PWR010
 U 1 1 5E0C8133
 P 1450 5300
@@ -505,17 +483,6 @@ F 3 "" H 1450 5300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 1450 5000
-$Comp
-L power:+5V #PWR026
-U 1 1 5E0C8908
-P 5450 3150
-F 0 "#PWR026" H 5450 3000 50  0001 C CNN
-F 1 "+5V" V 5465 3278 50  0000 L CNN
-F 2 "" H 5450 3150 50  0001 C CNN
-F 3 "" H 5450 3150 50  0001 C CNN
-	1    5450 3150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2700 3350 3050 3350
 Connection ~ 2700 3350
@@ -552,76 +519,6 @@ Wire Wire Line
 	5450 3350 6200 3350
 Wire Wire Line
 	2050 3250 3050 3250
-$Comp
-L power:GND #PWR025
-U 1 1 5E0E217C
-P 3050 3750
-F 0 "#PWR025" H 3050 3500 50  0001 C CNN
-F 1 "GND" H 3055 3577 50  0000 C CNN
-F 2 "" H 3050 3750 50  0001 C CNN
-F 3 "" H 3050 3750 50  0001 C CNN
-	1    3050 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R16
-U 1 1 5E0E2947
-P 5500 3950
-F 0 "R16" H 5568 3996 50  0000 L CNN
-F 1 "10k" H 5568 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5540 3940 50  0001 C CNN
-F 3 "~" H 5500 3950 50  0001 C CNN
-	1    5500 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C30
-U 1 1 5E0E318C
-P 5800 3950
-F 0 "C30" V 5548 3950 50  0000 C CNN
-F 1 "1nF" V 5639 3950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5838 3800 50  0001 C CNN
-F 3 "~" H 5800 3950 50  0001 C CNN
-	1    5800 3950
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR028
-U 1 1 5E0E36E0
-P 5800 3750
-F 0 "#PWR028" H 5800 3600 50  0001 C CNN
-F 1 "+5V" V 5815 3878 50  0000 L CNN
-F 2 "" H 5800 3750 50  0001 C CNN
-F 3 "" H 5800 3750 50  0001 C CNN
-	1    5800 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 3750 5800 3800
-Wire Wire Line
-	5450 3750 5500 3750
-Wire Wire Line
-	5500 3750 5500 3800
-Wire Wire Line
-	5500 3750 5800 3750
-Connection ~ 5500 3750
-Connection ~ 5800 3750
-Wire Wire Line
-	5500 4100 5650 4100
-$Comp
-L power:GND #PWR027
-U 1 1 5E0E7B10
-P 5650 4100
-F 0 "#PWR027" H 5650 3850 50  0001 C CNN
-F 1 "GND" H 5655 3927 50  0000 C CNN
-F 2 "" H 5650 4100 50  0001 C CNN
-F 3 "" H 5650 4100 50  0001 C CNN
-	1    5650 4100
-	1    0    0    -1  
-$EndComp
-Connection ~ 5650 4100
-Wire Wire Line
-	5650 4100 5800 4100
 Text Notes 2900 4400 0    276  ~ 0
 Level Shifter
 Text Notes 5700 2200 0    276  ~ 0
@@ -677,6 +574,262 @@ F 10 "PC TEST POINT MINIATURE" H 8900 5000 60  0001 L CNN "Description"
 F 11 "Keystone Electronics" H 8900 5100 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 8900 5200 60  0001 L CNN "Status"
 	1    8700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5E2BB7E8
+P 4250 3100
+F 0 "#PWR0140" H 4250 2850 50  0001 C CNN
+F 1 "GND" H 4255 2927 50  0000 C CNN
+F 2 "" H 4250 3100 50  0001 C CNN
+F 3 "" H 4250 3100 50  0001 C CNN
+	1    4250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5E2BB304
+P 4250 2150
+F 0 "#PWR0141" H 4250 2000 50  0001 C CNN
+F 1 "+5V" V 4265 2278 50  0000 L CNN
+F 2 "" H 4250 2150 50  0001 C CNN
+F 3 "" H 4250 2150 50  0001 C CNN
+	1    4250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0142
+U 1 1 5E2BAB74
+P 4150 2150
+F 0 "#PWR0142" H 4150 2000 50  0001 C CNN
+F 1 "+3V3" H 4165 2323 50  0000 C CNN
+F 2 "" H 4150 2150 50  0001 C CNN
+F 3 "" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U2
+U 1 1 5E2B9A42
+P 4150 2700
+F 0 "U2" H 4494 2753 60  0000 L CNN
+F 1 "SN74LVC1T45DBVR" H 4494 2647 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-6" H 4350 2900 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 4350 3000 60  0001 L CNN
+F 4 "296-16843-1-ND" H 4350 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1T45DBVR" H 4350 3200 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4350 3300 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 4350 3400 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 4350 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 4350 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 4350 3700 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4350 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4350 3900 60  0001 L CNN "Status"
+	1    4150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3250 3050 2700
+Wire Wire Line
+	3050 2700 3850 2700
+Wire Wire Line
+	4450 2700 5450 2700
+Wire Wire Line
+	5450 2700 5450 3250
+$Comp
+L power:GND #PWR0143
+U 1 1 5E2CAD52
+P 4250 4400
+F 0 "#PWR0143" H 4250 4150 50  0001 C CNN
+F 1 "GND" H 4255 4227 50  0000 C CNN
+F 2 "" H 4250 4400 50  0001 C CNN
+F 3 "" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0144
+U 1 1 5E2CAD58
+P 4250 3500
+F 0 "#PWR0144" H 4250 3350 50  0001 C CNN
+F 1 "+5V" V 4265 3628 50  0000 L CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0145
+U 1 1 5E2CAD5E
+P 4150 3500
+F 0 "#PWR0145" H 4150 3350 50  0001 C CNN
+F 1 "+3V3" H 4165 3673 50  0000 C CNN
+F 2 "" H 4150 3500 50  0001 C CNN
+F 3 "" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U7
+U 1 1 5E2CAD6D
+P 4150 4000
+F 0 "U7" H 4494 4053 60  0000 L CNN
+F 1 "SN74LVC1T45DBVR" H 4494 3947 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-6" H 4350 4200 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 4350 4300 60  0001 L CNN
+F 4 "296-16843-1-ND" H 4350 4400 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC1T45DBVR" H 4350 4500 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4350 4600 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 4350 4700 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" H 4350 4800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" H 4350 4900 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" H 4350 5000 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4350 5100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4350 5200 60  0001 L CNN "Status"
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3350 3050 4000
+Wire Wire Line
+	3050 4000 3850 4000
+Wire Wire Line
+	4450 4000 5450 4000
+Wire Wire Line
+	5450 4000 5450 3350
+$Comp
+L power:GND #PWR0146
+U 1 1 5E2CE665
+P 3850 2900
+F 0 "#PWR0146" H 3850 2650 50  0001 C CNN
+F 1 "GND" H 3855 2727 50  0000 C CNN
+F 2 "" H 3850 2900 50  0001 C CNN
+F 3 "" H 3850 2900 50  0001 C CNN
+	1    3850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0147
+U 1 1 5E2CEA35
+P 3850 4200
+F 0 "#PWR0147" H 3850 4050 50  0001 C CNN
+F 1 "+3V3" H 3865 4373 50  0000 C CNN
+F 2 "" H 3850 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 5E2F2DDF
+P 3950 2200
+F 0 "C37" V 4100 2200 50  0000 C CNN
+F 1 "10nF" V 3789 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3988 2050 50  0001 C CNN
+F 3 "~" H 3950 2200 50  0001 C CNN
+	1    3950 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C38
+U 1 1 5E2B9A2B
+P 4450 2200
+F 0 "C38" V 4600 2200 50  0000 C CNN
+F 1 "10nF" V 4289 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4488 2050 50  0001 C CNN
+F 3 "~" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2150 4250 2200
+Wire Wire Line
+	4300 2200 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 4250 2300
+Wire Wire Line
+	4150 2150 4150 2200
+Wire Wire Line
+	4150 2200 4100 2200
+Connection ~ 4150 2200
+Wire Wire Line
+	4150 2200 4150 2300
+$Comp
+L power:GND #PWR025
+U 1 1 5E2BEEB8
+P 3800 2200
+F 0 "#PWR025" H 3800 1950 50  0001 C CNN
+F 1 "GND" H 3805 2027 50  0000 C CNN
+F 2 "" H 3800 2200 50  0001 C CNN
+F 3 "" H 3800 2200 50  0001 C CNN
+	1    3800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5E2BF3E6
+P 4600 2200
+F 0 "#PWR026" H 4600 1950 50  0001 C CNN
+F 1 "GND" H 4605 2027 50  0000 C CNN
+F 2 "" H 4600 2200 50  0001 C CNN
+F 3 "" H 4600 2200 50  0001 C CNN
+	1    4600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C39
+U 1 1 5E2BF78D
+P 4500 3600
+F 0 "C39" V 4650 3600 50  0000 C CNN
+F 1 "10nF" V 4339 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 3450 50  0001 C CNN
+F 3 "~" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C30
+U 1 1 5E2C02EF
+P 3850 3600
+F 0 "C30" V 4000 3600 50  0000 C CNN
+F 1 "10nF" V 3689 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3888 3450 50  0001 C CNN
+F 3 "~" H 3850 3600 50  0001 C CNN
+	1    3850 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 3600 4350 3600
+Wire Wire Line
+	4250 3600 4250 3500
+Connection ~ 4250 3600
+Wire Wire Line
+	4150 3600 4150 3500
+Wire Wire Line
+	4150 3600 4000 3600
+Connection ~ 4150 3600
+$Comp
+L power:GND #PWR024
+U 1 1 5E2C6515
+P 3700 3600
+F 0 "#PWR024" H 3700 3350 50  0001 C CNN
+F 1 "GND" H 3705 3427 50  0000 C CNN
+F 2 "" H 3700 3600 50  0001 C CNN
+F 3 "" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5E2C6B9B
+P 4650 3600
+F 0 "#PWR027" H 4650 3350 50  0001 C CNN
+F 1 "GND" H 4655 3427 50  0000 C CNN
+F 2 "" H 4650 3600 50  0001 C CNN
+F 3 "" H 4650 3600 50  0001 C CNN
+	1    4650 3600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
