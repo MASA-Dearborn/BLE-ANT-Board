@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SWD
+#
+DEF SWD J 0 40 Y Y 1 L N
+F0 "J" -150 300 50 H V L BNN
+F1 "SWD" -150 -350 50 H V L BNN
+F2 "2X10_BOXHEADER" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -550 250 -550 -250 N
+P 2 0 0 10 -550 250 550 250 N
+P 2 0 0 10 550 250 550 -250 N
+P 2 0 0 10 550 -250 -550 -250 N
+X VDD 1 650 200 100 L 40 40 0 0 B 
+X SWDIO 2 -650 200 100 R 40 40 0 0 B 
+X GND 3 650 100 100 L 40 40 0 0 B 
+X SWDCLK 4 -650 100 100 R 40 40 0 0 B 
+X GND@1 5 650 0 100 L 40 40 0 0 B 
+X SWO 6 -650 0 100 R 40 40 0 0 B 
+X KEY 7 650 -100 100 L 40 40 0 0 B 
+X NC 8 -650 -100 100 R 40 40 0 0 B 
+X GND_DETECT 9 650 -200 100 L 40 40 0 0 B 
+X RESET 10 -650 -200 100 R 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:BLEANT-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,7 +26,7 @@ Text Label 8150 7650 0    50   ~ 0
 Text Label 7500 7500 0    50   ~ 0
 CAN_Transciever
 $Comp
-L Device:R_US NP1
+L BLEANT-rescue:R_US-Device NP1
 U 1 1 5DCB3E43
 P 7950 3250
 F 0 "NP1" H 8018 3296 50  0000 L CNN
@@ -38,7 +37,7 @@ F 3 "~" H 7950 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L BLEANT-rescue:C-Device C25
 U 1 1 5DCB9CD1
 P 7100 2700
 F 0 "C25" V 6848 2700 50  0000 C CNN
@@ -49,7 +48,7 @@ F 3 "~" H 7100 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C26
+L BLEANT-rescue:C-Device C26
 U 1 1 5DCBAD85
 P 7100 2900
 F 0 "C26" V 7000 2700 50  0000 C CNN
@@ -60,7 +59,7 @@ F 3 "~" H 7100 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR09
+L BLEANT-rescue:GND-power #PWR09
 U 1 1 5DCE500D
 P 1450 3050
 F 0 "#PWR09" H 1450 2800 50  0001 C CNN
@@ -71,7 +70,7 @@ F 3 "" H 1450 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C28
+L BLEANT-rescue:C-Device C28
 U 1 1 5DCE6703
 P 7950 4150
 F 0 "C28" H 8065 4196 50  0000 L CNN
@@ -82,7 +81,7 @@ F 3 "~" H 7950 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US NP2
+L BLEANT-rescue:R_US-Device NP2
 U 1 1 5DCE98D1
 P 7950 3650
 F 0 "NP2" H 8018 3696 50  0000 L CNN
@@ -93,7 +92,7 @@ F 3 "~" H 7950 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C29
+L BLEANT-rescue:C-Device C29
 U 1 1 5DCEFDFD
 P 8250 3450
 F 0 "C29" H 8365 3496 50  0000 L CNN
@@ -104,7 +103,7 @@ F 3 "~" H 8250 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR019
+L BLEANT-rescue:GND-power #PWR019
 U 1 1 5DCF0F65
 P 7950 4300
 F 0 "#PWR019" H 7950 4050 50  0001 C CNN
@@ -115,7 +114,7 @@ F 3 "" H 7950 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L BLEANT-rescue:GND-power #PWR018
 U 1 1 5DCF11EA
 P 7950 2600
 F 0 "#PWR018" H 7950 2350 50  0001 C CNN
@@ -126,7 +125,7 @@ F 3 "" H 7950 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R13
+L BLEANT-rescue:R_US-Device R13
 U 1 1 5DCF1CE0
 P 7650 3450
 F 0 "R13" H 7718 3496 50  0000 L CNN
@@ -137,7 +136,7 @@ F 3 "~" H 7650 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_TVS_x2_CAA D1
+L BLEANT-rescue:D_TVS_x2_CAA-Device D1
 U 1 1 5DD0169A
 P 8700 3450
 F 0 "D1" V 8654 3529 50  0000 L CNN
@@ -148,7 +147,7 @@ F 3 "https://www.mouser.com/datasheet/2/115/D5V0L2B3W-218988.pdf" H 8550 3450 50
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_US R12
+L BLEANT-rescue:R_US-Device R12
 U 1 1 5DD5BD7B
 P 6200 3900
 F 0 "R12" H 6268 3946 50  0000 L CNN
@@ -159,7 +158,7 @@ F 3 "~" H 6200 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R11
+L BLEANT-rescue:R_US-Device R11
 U 1 1 5DD67335
 P 2550 3350
 F 0 "R11" H 2618 3396 50  0000 L CNN
@@ -170,7 +169,7 @@ F 3 "~" H 2550 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Interface_CAN_LIN:MCP2515-xSO U5
+L BLEANT-rescue:MCP2515-xSO-Interface_CAN_LIN U5
 U 1 1 5DCB05B0
 P 1450 3850
 F 0 "U5" H 1450 3950 50  0000 C CNN
@@ -185,7 +184,7 @@ CAN_L
 Text HLabel 8850 3000 2    50   Input ~ 0
 CAN_H
 $Comp
-L Device:C C27
+L BLEANT-rescue:C-Device C27
 U 1 1 5DCE5998
 P 7950 2750
 F 0 "C27" H 8065 2796 50  0000 L CNN
@@ -196,7 +195,7 @@ F 3 "~" H 7950 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_CAN_LIN:SN65HVD1050D U6
+L BLEANT-rescue:SN65HVD1050D-Interface_CAN_LIN U6
 U 1 1 5DD4ABBA
 P 6800 3450
 F 0 "U6" H 6700 3500 50  0000 C CNN
@@ -242,7 +241,7 @@ Wire Wire Line
 	8700 3000 8850 3000
 Connection ~ 8700 3000
 $Comp
-L power:GND #PWR015
+L BLEANT-rescue:GND-power #PWR015
 U 1 1 5E09CBC9
 P 6800 3850
 F 0 "#PWR015" H 6800 3600 50  0001 C CNN
@@ -253,7 +252,7 @@ F 3 "" H 6800 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L BLEANT-rescue:GND-power #PWR017
 U 1 1 5E0A1057
 P 7250 2900
 F 0 "#PWR017" H 7250 2650 50  0001 C CNN
@@ -264,7 +263,7 @@ F 3 "" H 7250 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR016
+L BLEANT-rescue:GND-power #PWR016
 U 1 1 5E0A1679
 P 7250 2700
 F 0 "#PWR016" H 7250 2450 50  0001 C CNN
@@ -284,7 +283,7 @@ Wire Wire Line
 	6800 2700 6950 2700
 Connection ~ 6800 2900
 $Comp
-L power:+5V #PWR014
+L BLEANT-rescue:+5V-power #PWR014
 U 1 1 5E0A2EDD
 P 6800 2700
 F 0 "#PWR014" H 6800 2550 50  0001 C CNN
@@ -300,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3650 6300 3650
 $Comp
-L power:GND #PWR013
+L BLEANT-rescue:GND-power #PWR013
 U 1 1 5E0A7026
 P 6200 4050
 F 0 "#PWR013" H 6200 3800 50  0001 C CNN
@@ -311,7 +310,7 @@ F 3 "" H 6200 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R10
+L BLEANT-rescue:R_US-Device R10
 U 1 1 5E0A7D89
 P 5950 3250
 F 0 "R10" H 6018 3296 50  0000 L CNN
@@ -322,7 +321,7 @@ F 3 "~" H 5950 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C20
+L BLEANT-rescue:C-Device C20
 U 1 1 5E0BDAE5
 P 1150 5000
 F 0 "C20" V 898 5000 50  0000 C CNN
@@ -333,7 +332,7 @@ F 3 "~" H 1150 5000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C17
+L BLEANT-rescue:C-Device C17
 U 1 1 5E0BDAEB
 P 1150 4800
 F 0 "C17" V 1050 4600 50  0000 C CNN
@@ -344,7 +343,7 @@ F 3 "~" H 1150 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR07
+L BLEANT-rescue:GND-power #PWR07
 U 1 1 5E0BDAF1
 P 1000 4800
 F 0 "#PWR07" H 1000 4550 50  0001 C CNN
@@ -355,7 +354,7 @@ F 3 "" H 1000 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR08
+L BLEANT-rescue:GND-power #PWR08
 U 1 1 5E0BDAF7
 P 1000 5000
 F 0 "#PWR08" H 1000 4750 50  0001 C CNN
@@ -375,7 +374,7 @@ Wire Wire Line
 	1450 5000 1300 5000
 Connection ~ 1450 4800
 $Comp
-L Device:C C24
+L BLEANT-rescue:C-Device C24
 U 1 1 5E0C191D
 P 2700 3750
 F 0 "C24" V 2850 3750 50  0000 C CNN
@@ -386,7 +385,7 @@ F 3 "~" H 2700 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR012
+L BLEANT-rescue:GND-power #PWR012
 U 1 1 5E0C3AF0
 P 2700 3900
 F 0 "#PWR012" H 2700 3650 50  0001 C CNN
@@ -411,7 +410,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 3450 8450 3450
 $Comp
-L power:GND #PWR020
+L BLEANT-rescue:GND-power #PWR020
 U 1 1 5E0C862A
 P 8450 3450
 F 0 "#PWR020" H 8450 3200 50  0001 C CNN
@@ -472,7 +471,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3350 6300 3350
 $Comp
-L power:+3V3 #PWR010
+L BLEANT-rescue:+3V3-power #PWR010
 U 1 1 5E0C8133
 P 1450 5300
 F 0 "#PWR010" H 1450 5150 50  0001 C CNN
@@ -494,7 +493,7 @@ Connection ~ 5650 3250
 Wire Wire Line
 	5650 3100 5650 3250
 $Comp
-L power:GND #PWR011
+L BLEANT-rescue:GND-power #PWR011
 U 1 1 5E0B3A8E
 P 5650 2800
 F 0 "#PWR011" H 5650 2550 50  0001 C CNN
@@ -505,7 +504,7 @@ F 3 "" H 5650 2800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C23
+L BLEANT-rescue:C-Device C23
 U 1 1 5DCB7D7B
 P 5650 2950
 F 0 "C23" V 5398 2950 50  0000 C CNN
@@ -526,7 +525,7 @@ CAN Transceiver\n
 Text Notes 250  2650 0    276  ~ 0
 CAN Controller
 $Comp
-L Device:R_US R17
+L BLEANT-rescue:R_US-Device R17
 U 1 1 5E27A6F5
 P 1450 5150
 F 0 "R17" H 1518 5196 50  0000 L CNN
@@ -537,7 +536,7 @@ F 3 "~" H 1450 5150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L dk_Test-Points:5029 TP12
+L BLEANT-rescue:5029-dk_Test-Points TP12
 U 1 1 5E2BCF1F
 P 8700 2900
 F 0 "TP12" H 8650 2947 50  0000 R CNN
@@ -557,7 +556,7 @@ F 12 "Active" H 8900 4100 60  0001 L CNN "Status"
 	-1   0    0    1   
 $EndComp
 $Comp
-L dk_Test-Points:5029 TP13
+L BLEANT-rescue:5029-dk_Test-Points TP13
 U 1 1 5E2BE1B4
 P 8700 4000
 F 0 "TP13" H 8750 4047 50  0000 L CNN
@@ -577,7 +576,7 @@ F 12 "Active" H 8900 5200 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0140
+L BLEANT-rescue:GND-power #PWR0140
 U 1 1 5E2BB7E8
 P 4250 3100
 F 0 "#PWR0140" H 4250 2850 50  0001 C CNN
@@ -588,7 +587,7 @@ F 3 "" H 4250 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0141
+L BLEANT-rescue:+5V-power #PWR0141
 U 1 1 5E2BB304
 P 4250 2150
 F 0 "#PWR0141" H 4250 2000 50  0001 C CNN
@@ -599,7 +598,7 @@ F 3 "" H 4250 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0142
+L BLEANT-rescue:+3V3-power #PWR0142
 U 1 1 5E2BAB74
 P 4150 2150
 F 0 "#PWR0142" H 4150 2000 50  0001 C CNN
@@ -610,7 +609,7 @@ F 3 "" H 4150 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U2
+L BLEANT-rescue:SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters U2
 U 1 1 5E2B9A42
 P 4150 2700
 F 0 "U2" H 4494 2753 60  0000 L CNN
@@ -638,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 2700 5450 3250
 $Comp
-L power:GND #PWR0143
+L BLEANT-rescue:GND-power #PWR0143
 U 1 1 5E2CAD52
 P 4250 4400
 F 0 "#PWR0143" H 4250 4150 50  0001 C CNN
@@ -649,7 +648,7 @@ F 3 "" H 4250 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0144
+L BLEANT-rescue:+5V-power #PWR0144
 U 1 1 5E2CAD58
 P 4250 3500
 F 0 "#PWR0144" H 4250 3350 50  0001 C CNN
@@ -660,7 +659,7 @@ F 3 "" H 4250 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0145
+L BLEANT-rescue:+3V3-power #PWR0145
 U 1 1 5E2CAD5E
 P 4150 3500
 F 0 "#PWR0145" H 4150 3350 50  0001 C CNN
@@ -671,7 +670,7 @@ F 3 "" H 4150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Logic-Translators-Level-Shifters:SN74LVC1T45DBVR U7
+L BLEANT-rescue:SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters U7
 U 1 1 5E2CAD6D
 P 4150 4000
 F 0 "U7" H 4494 4053 60  0000 L CNN
@@ -699,7 +698,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 4000 5450 3350
 $Comp
-L power:GND #PWR0146
+L BLEANT-rescue:GND-power #PWR0146
 U 1 1 5E2CE665
 P 3850 2900
 F 0 "#PWR0146" H 3850 2650 50  0001 C CNN
@@ -710,7 +709,7 @@ F 3 "" H 3850 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0147
+L BLEANT-rescue:+3V3-power #PWR0147
 U 1 1 5E2CEA35
 P 3850 4200
 F 0 "#PWR0147" H 3850 4050 50  0001 C CNN
@@ -721,7 +720,7 @@ F 3 "" H 3850 4200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C37
+L BLEANT-rescue:C-Device C37
 U 1 1 5E2F2DDF
 P 3950 2200
 F 0 "C37" V 4100 2200 50  0000 C CNN
@@ -732,7 +731,7 @@ F 3 "~" H 3950 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C38
+L BLEANT-rescue:C-Device C38
 U 1 1 5E2B9A2B
 P 4450 2200
 F 0 "C38" V 4600 2200 50  0000 C CNN
@@ -757,7 +756,7 @@ Connection ~ 4150 2200
 Wire Wire Line
 	4150 2200 4150 2300
 $Comp
-L power:GND #PWR025
+L BLEANT-rescue:GND-power #PWR025
 U 1 1 5E2BEEB8
 P 3800 2200
 F 0 "#PWR025" H 3800 1950 50  0001 C CNN
@@ -768,7 +767,7 @@ F 3 "" H 3800 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L BLEANT-rescue:GND-power #PWR026
 U 1 1 5E2BF3E6
 P 4600 2200
 F 0 "#PWR026" H 4600 1950 50  0001 C CNN
@@ -779,7 +778,7 @@ F 3 "" H 4600 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C39
+L BLEANT-rescue:C-Device C39
 U 1 1 5E2BF78D
 P 4500 3600
 F 0 "C39" V 4650 3600 50  0000 C CNN
@@ -790,7 +789,7 @@ F 3 "~" H 4500 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C30
+L BLEANT-rescue:C-Device C30
 U 1 1 5E2C02EF
 P 3850 3600
 F 0 "C30" V 4000 3600 50  0000 C CNN
@@ -811,7 +810,7 @@ Wire Wire Line
 	4150 3600 4000 3600
 Connection ~ 4150 3600
 $Comp
-L power:GND #PWR024
+L BLEANT-rescue:GND-power #PWR024
 U 1 1 5E2C6515
 P 3700 3600
 F 0 "#PWR024" H 3700 3350 50  0001 C CNN
@@ -822,7 +821,7 @@ F 3 "" H 3700 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR027
+L BLEANT-rescue:GND-power #PWR027
 U 1 1 5E2C6B9B
 P 4650 3600
 F 0 "#PWR027" H 4650 3350 50  0001 C CNN

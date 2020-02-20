@@ -1,11 +1,56 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 1909763-1_1909763-1
+# BLEANT-rescue_+3.3V-power
 #
-DEF 1909763-1_1909763-1 J 0 40 Y Y 1 L N
+DEF BLEANT-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "BLEANT-rescue_+3.3V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_+3V3-power
+#
+DEF BLEANT-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "BLEANT-rescue_+3V3-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_+5V-power
+#
+DEF BLEANT-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "BLEANT-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_1909763-1-1909763-1
+#
+DEF BLEANT-rescue_1909763-1-1909763-1 J 0 40 Y Y 1 L N
 F0 "J" -150 160 50 H V L BNN
-F1 "1909763-1_1909763-1" -170 -220 50 H V L BNN
+F1 "BLEANT-rescue_1909763-1-1909763-1" -170 -220 50 H V L BNN
 F2 "TE_1909763-1" 0 0 50 H I L BNN
 F3 "https://www.te.com/usa-en/product-1909763-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" 0 0 50 H I L BNN
 F4 "1" 0 0 50 H I L BNN
@@ -36,37 +81,51 @@ X GND 3 -100 -100 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x04_Male
+# BLEANT-rescue_5029-dk_Test-Points
 #
-DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
+DEF BLEANT-rescue_5029-dk_Test-Points TP 0 40 N N 1 F N
+F0 "TP" -50 50 50 H V R CNN
+F1 "BLEANT-rescue_5029-dk_Test-Points" 0 -100 50 H I C CNN
+F2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" 200 200 60 H I L CNN
+F3 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 300 60 H I L CNN
+F4 "36-5029CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "5029" 200 500 60 H I L CNN "MPN"
+F6 "Test and Measurement" 200 600 60 H I L CNN "Category"
+F7 "Test Points" 200 700 60 H I L CNN "Family"
+F8 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "PC TEST POINT MINIATURE" 200 1000 60 H I L CNN "Description"
+F11 "Keystone Electronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
-S 34 -195 0 -205 1 1 6 F
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-P 2 1 1 6 50 -200 34 -200 N
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-X Pin_1 1 200 100 150 L 50 50 1 1 P
-X Pin_2 2 200 0 150 L 50 50 1 1 P
-X Pin_3 3 200 -100 150 L 50 50 1 1 P
-X Pin_4 4 200 -200 150 L 50 50 1 1 P
+C 0 0 22 0 1 0 N
+X ~ 1 0 100 75 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x02
+# BLEANT-rescue_C-Device
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+DEF BLEANT-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "BLEANT-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_Conn_01x02-Connector_Generic
+#
+DEF BLEANT-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F1 "BLEANT-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -81,46 +140,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_TestPoint
+# BLEANT-rescue_Crystal-Device
 #
-DEF Connector_TestPoint TP 0 30 N N 1 F N
-F0 "TP" 0 270 50 H V C CNN
-F1 "Connector_TestPoint" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-$FPLIST
- Pin*
- Test*
-$ENDFPLIST
-DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Crystal
-#
-DEF Device_Crystal Y 0 40 N N 1 F N
+DEF BLEANT-rescue_Crystal-Device Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "Device_Crystal" 0 -150 50 H V C CNN
+F1 "BLEANT-rescue_Crystal-Device" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -137,11 +161,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_GND24
+# BLEANT-rescue_Crystal_GND24-Device
 #
-DEF Device_Crystal_GND24 Y 0 40 Y N 1 F N
+DEF BLEANT-rescue_Crystal_GND24-Device Y 0 40 Y N 1 F N
 F0 "Y" 125 200 50 H V L CNN
-F1 "Device_Crystal_GND24" 125 125 50 H V L CNN
+F1 "BLEANT-rescue_Crystal_GND24-Device" 125 125 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -164,11 +188,11 @@ X 4 4 0 -200 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_TVS
+# BLEANT-rescue_D_TVS-Device
 #
-DEF Device_D_TVS D 0 40 N N 1 F N
+DEF BLEANT-rescue_D_TVS-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_TVS" 0 -100 50 H V C CNN
+F1 "BLEANT-rescue_D_TVS-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -187,11 +211,11 @@ X A2 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_TVS_x2_CAA
+# BLEANT-rescue_D_TVS_x2_CAA-Device
 #
-DEF Device_D_TVS_x2_CAA D 0 40 Y N 1 F N
+DEF BLEANT-rescue_D_TVS_x2_CAA-Device D 0 40 Y N 1 F N
 F0 "D" 0 175 50 H V C CNN
-F1 "Device_D_TVS_x2_CAA" 0 100 50 H V C CNN
+F1 "BLEANT-rescue_D_TVS_x2_CAA-Device" 0 100 50 H V C CNN
 F2 "" -150 0 50 H I C CNN
 F3 "" -150 0 50 H I C CNN
 DRAW
@@ -208,55 +232,11 @@ X A2 3 350 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
+# BLEANT-rescue_FAN4010IL6X_F113-FAN4010IL6X_F113
 #
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R_US
-#
-DEF Device_R_US R 0 0 N Y 1 F N
-F0 "R" 100 0 50 V V C CNN
-F1 "Device_R_US" -100 0 50 V V C CNN
-F2 "" 40 -10 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 0 -90 0 -100 N
-P 2 0 1 0 0 90 0 100 N
-P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
-P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
-P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# FAN4010IL6X_F113_FAN4010IL6X_F113
-#
-DEF FAN4010IL6X_F113_FAN4010IL6X_F113 IC 0 30 Y Y 1 F N
+DEF BLEANT-rescue_FAN4010IL6X_F113-FAN4010IL6X_F113 IC 0 30 Y Y 1 F N
 F0 "IC" 950 300 50 H V L CNN
-F1 "FAN4010IL6X_F113_FAN4010IL6X_F113" 950 200 50 H V L CNN
+F1 "BLEANT-rescue_FAN4010IL6X_F113-FAN4010IL6X_F113" 950 200 50 H V L CNN
 F2 "6-LEAD_MICROPAK" 950 100 50 H I L CNN
 F3 "http://pdl.designspark.com/api/v1/manufacturers/53f31bb99b4759f8698ebd6d/part/54f601839b4759c27e8ce92c/54f601849b4759c27e8ce954/1pdf" 950 0 50 H I L CNN
 F4 "Current Sense Amplifier Single Single Ended 6-Pin MLP" 950 -100 50 H I L CNN "Description"
@@ -277,11 +257,62 @@ X LOAD 6 1100 -200 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
-# Interface_CAN_LIN_MCP2515-xSO
+# BLEANT-rescue_GND-power
 #
-DEF Interface_CAN_LIN_MCP2515-xSO U 0 20 Y Y 1 F N
+DEF BLEANT-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "BLEANT-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_L-Device
+#
+DEF BLEANT-rescue_L-Device L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "BLEANT-rescue_L-Device" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_LM50CIM3X-MASA_Library
+#
+DEF BLEANT-rescue_LM50CIM3X-MASA_Library TMP 0 40 Y Y 1 F N
+F0 "TMP" 0 300 50 H V C CNN
+F1 "BLEANT-rescue_LM50CIM3X-MASA_Library" 0 200 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 0 250 50 H I C CNN
+F3 "" 0 250 50 H I C CNN
+DRAW
+S -300 150 300 -150 0 1 0 N
+X Vs 1 -400 0 100 R 50 50 1 1 I
+X Vout 2 400 0 100 L 50 50 1 1 I
+X GND 3 0 -250 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_MCP2515-xSO-Interface_CAN_LIN
+#
+DEF BLEANT-rescue_MCP2515-xSO-Interface_CAN_LIN U 0 20 Y Y 1 F N
 F0 "U" -400 775 50 H V R CNN
-F1 "Interface_CAN_LIN_MCP2515-xSO" 750 800 50 H V R TNN
+F1 "BLEANT-rescue_MCP2515-xSO-Interface_CAN_LIN" 750 800 50 H V R TNN
 F2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" 0 -900 50 H I C CIN
 F3 "" 100 -800 50 H I C CNN
 $FPLIST
@@ -310,49 +341,11 @@ X VSS 9 0 -800 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Interface_CAN_LIN_SN65HVD1050D
+# BLEANT-rescue_MP5077GG-Z-MASA_Library
 #
-DEF Interface_CAN_LIN_SN65HVD1050D U 0 20 Y Y 1 F N
-F0 "U" -350 350 50 H V R CNN
-F1 "Interface_CAN_LIN_SN65HVD1050D" 50 350 50 H V L CNN
-F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 -500 50 H I C CNN
-F3 "" -100 400 50 H I C CNN
-$FPLIST
- SOIC*3.9x4.9mm*P1.27mm*
-$ENDFPLIST
-DRAW
-S -400 300 400 -300 0 1 10 f
-X TXD 1 -500 200 100 R 50 50 1 1 I
-X GND 2 0 -400 100 U 50 50 1 1 W
-X VCC 3 0 400 100 D 50 50 1 1 W
-X RXD 4 -500 100 100 R 50 50 1 1 O
-X VREF 5 500 0 100 L 50 50 1 1 P
-X CANL 6 500 -100 100 L 50 50 1 1 B
-X CANH 7 500 100 100 L 50 50 1 1 B
-X S 8 -500 -200 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MASA_Library_LM50CIM3X
-#
-DEF MASA_Library_LM50CIM3X TMP 0 40 Y Y 1 F N
-F0 "TMP" 0 300 50 H V C CNN
-F1 "MASA_Library_LM50CIM3X" 0 200 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 250 50 H I C CNN
-F3 "" 0 250 50 H I C CNN
-DRAW
-S -300 150 300 -150 0 1 0 N
-X Vs 1 -400 0 100 R 50 50 1 1 I
-X Vout 2 400 0 100 L 50 50 1 1 I
-X GND 3 0 -250 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MASA_Library_MP5077GG-Z
-#
-DEF MASA_Library_MP5077GG-Z U 0 40 Y Y 1 F N
+DEF BLEANT-rescue_MP5077GG-Z-MASA_Library U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "MASA_Library_MP5077GG-Z" 0 50 50 H V C CNN
+F1 "BLEANT-rescue_MP5077GG-Z-MASA_Library" 0 50 50 H V C CNN
 F2 "MASA_Library:MP5077GG-Z" 0 -100 50 H I C CNN
 F3 "" 0 -100 50 H I C CNN
 DRAW
@@ -371,11 +364,32 @@ X Vout 9 400 150 100 L 50 50 1 1 O N
 ENDDRAW
 ENDDEF
 #
-# MASA_Library_SC_19-20
+# BLEANT-rescue_R_US-Device
 #
-DEF MASA_Library_SC_19-20 J 0 30 Y Y 1 F N
+DEF BLEANT-rescue_R_US-Device R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "BLEANT-rescue_R_US-Device" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_SC_19-20-MASA_Library
+#
+DEF BLEANT-rescue_SC_19-20-MASA_Library J 0 30 Y Y 1 F N
 F0 "J" -50 -2150 50 H V L CNN
-F1 "MASA_Library_SC_19-20" -200 50 50 H V L CNN
+F1 "BLEANT-rescue_SC_19-20-MASA_Library" -200 50 50 H V L CNN
 F2 "MASA_Library:Stack_Connector_2019_2020" -250 150 50 H I L CNN
 F3 "" -250 650 50 H I L CNN
 F4 "Conn Shrouded Header HDR 40 POS 1.27mm Solder ST SMD T/R" -250 550 50 H I L CNN "Description"
@@ -427,11 +441,86 @@ X 9 9 -650 -500 200 R 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
-# MCU_Nordic_nRF51x22-QFxx
+# BLEANT-rescue_SN65HVD1050D-Interface_CAN_LIN
 #
-DEF MCU_Nordic_nRF51x22-QFxx U 0 20 Y Y 1 F N
+DEF BLEANT-rescue_SN65HVD1050D-Interface_CAN_LIN U 0 20 Y Y 1 F N
+F0 "U" -350 350 50 H V R CNN
+F1 "BLEANT-rescue_SN65HVD1050D-Interface_CAN_LIN" 50 350 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 -500 50 H I C CNN
+F3 "" -100 400 50 H I C CNN
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S -400 300 400 -300 0 1 10 f
+X TXD 1 -500 200 100 R 50 50 1 1 I
+X GND 2 0 -400 100 U 50 50 1 1 W
+X VCC 3 0 400 100 D 50 50 1 1 W
+X RXD 4 -500 100 100 R 50 50 1 1 O
+X VREF 5 500 0 100 L 50 50 1 1 P
+X CANL 6 500 -100 100 L 50 50 1 1 B
+X CANH 7 500 100 100 L 50 50 1 1 B
+X S 8 -500 -200 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters
+#
+DEF BLEANT-rescue_SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters U 0 20 Y Y 1 F N
+F0 "U" -150 350 60 H V C CNN
+F1 "BLEANT-rescue_SN74LVC1T45DBVR-dk_Logic-Translators-Level-Shifters" -50 450 60 H V R CNN
+F2 "digikey-footprints:SOT-23-6" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" 200 300 60 H I L CNN
+F4 "296-16843-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SN74LVC1T45DBVR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Logic - Translators, Level Shifters" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 300 200 -300 0 1 0 f
+P 2 0 1 0 -125 0 -75 0 N
+P 2 0 1 0 125 0 75 0 N
+P 3 0 1 0 -75 0 -75 -25 -20 -25 N
+P 3 0 1 0 -75 0 -75 25 -25 25 N
+P 3 0 1 0 75 0 75 -25 25 -25 N
+P 3 0 1 0 75 0 75 25 25 25 N
+P 4 0 1 0 -25 50 -25 0 25 25 -25 50 F
+P 4 0 1 0 25 0 25 -50 -25 -25 25 0 F
+X VCCA 1 0 400 100 D 50 50 1 1 W
+X GND 2 100 -400 100 U 50 50 1 1 W
+X A 3 -300 0 100 R 50 50 1 1 B
+X B 4 300 0 100 L 50 50 1 1 B
+X DIR 5 -300 -200 100 R 50 50 1 1 I
+X VCCB 6 100 400 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_TestPoint-Connector
+#
+DEF BLEANT-rescue_TestPoint-Connector TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "BLEANT-rescue_TestPoint-Connector" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# BLEANT-rescue_nRF51x22-QFxx-MCU_Nordic
+#
+DEF BLEANT-rescue_nRF51x22-QFxx-MCU_Nordic U 0 20 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "MCU_Nordic_nRF51x22-QFxx" 0 -100 50 H V C CNN
+F1 "BLEANT-rescue_nRF51x22-QFxx-MCU_Nordic" 0 -100 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm" 0 0 50 H I C CNN
 F3 "" -400 -100 50 H I C CNN
 $FPLIST
@@ -491,106 +580,28 @@ X P0.5 9 900 1000 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# dk_Logic-Translators-Level-Shifters_SN74LVC1T45DBVR
+# SWD_SWD
 #
-DEF dk_Logic-Translators-Level-Shifters_SN74LVC1T45DBVR U 0 20 Y Y 1 F N
-F0 "U" -150 350 60 H V C CNN
-F1 "dk_Logic-Translators-Level-Shifters_SN74LVC1T45DBVR" -50 450 60 H V R CNN
-F2 "digikey-footprints:SOT-23-6" 200 200 60 H I L CNN
-F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" 200 300 60 H I L CNN
-F4 "296-16843-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN74LVC1T45DBVR" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Logic - Translators, Level Shifters" 200 700 60 H I L CNN "Family"
-F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1t45" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/texas-instruments/SN74LVC1T45DBVR/296-16843-1-ND/639459" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC TRNSLTR BIDIRECTIONAL SOT23-6" 200 1000 60 H I L CNN "Description"
-F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
+DEF SWD_SWD J 0 40 Y Y 1 L N
+F0 "J" -150 300 50 H V L BNN
+F1 "SWD_SWD" -150 -350 50 H V L BNN
+F2 "2X10_BOXHEADER" 0 0 50 H I L BNN
+F3 "" 0 0 276 H I C CNN
 DRAW
-S -200 300 200 -300 0 1 0 f
-P 2 0 1 0 -125 0 -75 0 N
-P 2 0 1 0 125 0 75 0 N
-P 3 0 1 0 -75 0 -75 -25 -20 -25 N
-P 3 0 1 0 -75 0 -75 25 -25 25 N
-P 3 0 1 0 75 0 75 -25 25 -25 N
-P 3 0 1 0 75 0 75 25 25 25 N
-P 4 0 1 0 -25 50 -25 0 25 25 -25 50 F
-P 4 0 1 0 25 0 25 -50 -25 -25 25 0 F
-X VCCA 1 0 400 100 D 50 50 1 1 W
-X GND 2 100 -400 100 U 50 50 1 1 W
-X A 3 -300 0 100 R 50 50 1 1 B
-X B 4 300 0 100 L 50 50 1 1 B
-X DIR 5 -300 -200 100 R 50 50 1 1 I
-X VCCB 6 100 400 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# dk_Test-Points_5029
-#
-DEF dk_Test-Points_5029 TP 0 40 N N 1 F N
-F0 "TP" -50 50 50 H V R CNN
-F1 "dk_Test-Points_5029" 0 -100 50 H I C CNN
-F2 "digikey-footprints:PC_Test_Point_Mini_3.8x2.03mm" 200 200 60 H I L CNN
-F3 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 300 60 H I L CNN
-F4 "36-5029CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "5029" 200 500 60 H I L CNN "MPN"
-F6 "Test and Measurement" 200 600 60 H I L CNN "Category"
-F7 "Test Points" 200 700 60 H I L CNN "Family"
-F8 "http://www.keyelco.com/product-pdf.cfm?p=1358" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/keystone-electronics/5029/36-5029CT-ND/5980631" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "PC TEST POINT MINIATURE" 200 1000 60 H I L CNN "Description"
-F11 "Keystone Electronics" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C 0 0 22 0 1 0 N
-X ~ 1 0 100 75 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+3V3
-#
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
+P 2 0 0 10 -550 250 -550 -250 N
+P 2 0 0 10 -550 250 550 250 N
+P 2 0 0 10 550 -250 -550 -250 N
+P 2 0 0 10 550 250 550 -250 N
+X VDD 1 650 200 100 L 40 40 0 0 B
+X RESET 10 -650 -200 100 R 40 40 0 0 B
+X SWDIO 2 -650 200 100 R 40 40 0 0 B
+X GND 3 650 100 100 L 40 40 0 0 B
+X SWDCLK 4 -650 100 100 R 40 40 0 0 B
+X GND@1 5 650 0 100 L 40 40 0 0 B
+X SWO 6 -650 0 100 R 40 40 0 0 B
+X KEY 7 650 -100 100 L 40 40 0 0 B
+X NC 8 -650 -100 100 R 40 40 0 0 B
+X GND_DETECT 9 650 -200 100 L 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
